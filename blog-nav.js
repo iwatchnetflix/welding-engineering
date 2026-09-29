@@ -1,6 +1,6 @@
 (() => {
   const nav = document.querySelector("header nav");
-  const home = nav?.querySelector('a[href="index.html"]');
+  const home = nav?.querySelector('a[href="./"]');
   if (!nav || !home || nav.querySelector(".nav-dropdown")) return;
 
   const file = location.pathname.split("/").pop() || "index.html";
