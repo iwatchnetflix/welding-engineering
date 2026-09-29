@@ -253,14 +253,11 @@ nav a[aria-current=page]:after { background: var(--accent); }
 .case-sources { display: flex; flex-wrap: wrap; gap: 8px 20px; }
 .case-source { display: inline-block; color: var(--accent); }
 
-.initial-art {
-  color: #0c1113;
-  background:
-    radial-gradient(circle at 65% 35%, #e9c782 0 3%, transparent 4%),
-    linear-gradient(145deg, #ddb66b, #31505a 65%, #172327);
-  border-radius: 4px;
+.about-grid {
+  grid-template-columns: minmax(0, 780px);
+  justify-content: center;
+  color: var(--ink);
 }
-.about-grid { color: var(--ink); }
 .about-content p, .qualification-list { color: #a6b0b1; }
 .about-content h2 { color: #f3f0e8; }
 .credentials, .about-links a { color: var(--accent); }
