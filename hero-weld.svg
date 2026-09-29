@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 430" role="img" aria-labelledby="title desc">
+  <title id="title">Weld thermal field and structural bridge concept</title>
+  <desc id="desc">An abstract engineering illustration connecting a glowing weld seam and heat-affected zones with the outline of a steel arch bridge.</desc>
+  <defs>
+    <linearGradient id="plateA" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6f7e84"/>
+      <stop offset=".48" stop-color="#37454b"/>
+      <stop offset="1" stop-color="#182327"/>
+    </linearGradient>
+    <linearGradient id="plateB" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#56666c"/>
+      <stop offset=".52" stop-color="#2b393e"/>
+      <stop offset="1" stop-color="#111a1e"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#27353a"/>
+      <stop offset="1" stop-color="#0b1114"/>
+    </linearGradient>
+    <linearGradient id="weld" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#775530"/>
+      <stop offset=".48" stop-color="#d7a75b"/>
+      <stop offset=".78" stop-color="#fff0b0"/>
+      <stop offset="1" stop-color="#b77b35"/>
+    </linearGradient>
+    <linearGradient id="haz" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6dc9c5" stop-opacity="0"/>
+      <stop offset=".45" stop-color="#6dc9c5" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#d8a85c" stop-opacity=".04"/>
+    </linearGradient>
+    <radialGradient id="pool">
+      <stop offset="0" stop-color="#fffbe7"/>
+      <stop offset=".18" stop-color="#ffe7a1" stop-opacity=".95"/>
+      <stop offset=".48" stop-color="#70d4d5" stop-opacity=".36"/>
+      <stop offset="1" stop-color="#70d4d5" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grain" width="18" height="18" patternUnits="userSpaceOnUse" patternTransform="rotate(-14)">
+      <path d="M0 9h18M9 0v18" stroke="#b9d4d2" stroke-width=".55" opacity=".2"/>
+    </pattern>
+    <filter id="shadow" x="-20%" y="-30%" width="150%" height="180%">
+      <feDropShadow dx="0" dy="18" stdDeviation="15" flood-color="#000" flood-opacity=".48"/>
+    </filter>
+    <filter id="glow" x="-300%" y="-300%" width="700%" height="700%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+  </defs>
+
+  <!-- Bridge outline: local weld behaviour connected to structural performance. -->
+  <g fill="none" stroke="#8ba7a7" stroke-linecap="round">
+    <path d="M54 326H594" stroke-width="2" opacity=".34"/>
+    <path d="M74 326C156 309 185 141 324 134C455 128 486 300 574 326" stroke-width="3" opacity=".34"/>
+    <path d="M112 314V326M155 278V326M202 215V326M252 158V326M324 134V326M394 160V326M444 218V326M489 280V326M535 314V326" stroke-width="1" opacity=".2"/>
+    <path d="M87 340H562" stroke="#d7a75b" stroke-width="1" opacity=".28"/>
+  </g>
+
+  <!-- Two steel plates and their shared weld seam. -->
+  <g filter="url(#shadow)">
+    <path d="M82 180L495 78L548 112L135 216Z" fill="url(#plateA)" stroke="#819094" stroke-width="1.1"/>
+    <path d="M135 216L548 112V130L135 234Z" fill="url(#edge)" stroke="#3d4a4f"/>
+    <path d="M82 180L135 216V234L82 198Z" fill="#10191d" stroke="#3d4a4f"/>
+    <path d="M139 232L552 128L588 158L176 263Z" fill="url(#plateB)" stroke="#718084" stroke-width="1.1"/>
+    <path d="M176 263L588 158V177L176 282Z" fill="url(#edge)" stroke="#38464a"/>
+    <path d="M139 232L176 263V282L139 251Z" fill="#0c1417" stroke="#38464a"/>
+
+    <!-- Heat-affected zones immediately beside the fusion line. -->
+    <path d="M128 218L548 112L558 121L138 228Z" fill="url(#haz)"/>
+    <path d="M143 233L558 128L568 137L153 243Z" fill="url(#haz)"/>
+    <path d="M136 224L552 119L562 128L146 234Z" fill="url(#weld)" stroke="#e7be76" stroke-width=".8"/>
+    <path d="M141 224L557 119" fill="none" stroke="#fff0b4" stroke-width="1.2" opacity=".72"/>
+    <path d="M146 230L562 125" fill="none" stroke="#72502b" stroke-width="1.1" opacity=".62"/>
+    <path d="M82 180L495 78L548 112L135 216Z" fill="url(#grain)" opacity=".36"/>
+  </g>
+
+  <!-- Thermal contours make the process visible without a literal torch. -->
+  <g fill="none" stroke="#74c6c2" opacity=".36">
+    <path d="M370 154C397 128 436 113 474 112"/>
+    <path d="M354 168C391 126 442 99 500 96"/>
+    <path d="M342 181C388 119 451 84 522 82"/>
+  </g>
+  <circle cx="389" cy="163" r="58" fill="url(#pool)" filter="url(#glow)"/>
+  <circle cx="389" cy="163" r="7" fill="#fff7d1"/>
+  <path d="M389 163l-13-20M389 163l20-17M389 163l23 5M389 163l-17 18" stroke="#e6fbfa" stroke-width="1.4" stroke-linecap="round" opacity=".82"/>
+
+  <!-- Minimal drafting marks reinforce the engineering language. -->
+  <g fill="none" stroke="#7e9393" stroke-width="1" opacity=".34">
+    <path d="M82 157V121M82 133H188"/>
+    <path d="M548 89V55M442 67H548"/>
+    <circle cx="389" cy="163" r="25"/>
+    <circle cx="389" cy="163" r="39"/>
+  </g>
+</svg>

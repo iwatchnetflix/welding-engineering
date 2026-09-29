@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>工程工具箱 · XIAO Tingyu</title>
+  <meta name="description" content="焊接与高强钢工程速查：计算公式、工艺评定、质量检验、材料与设计标准。">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%23007a75'/%3E%3Ctext x='5' y='28' fill='white' font-size='24' font-family='Georgia'%3EXT%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="dark.css?v=20260928-11">
+  <script>document.documentElement.classList.add("i18n-loading")</script>
+  <script src="blog-nav.js" defer></script>
+  <script src="i18n.js?v=20260928-17" defer></script>
+</head>
+<body>
+  <a href="#main" class="skip">跳至正文</a>
+  <header>
+    <div class="wrap nav">
+      <a class="wordmark" href="index.html" aria-label="XIAO Tingyu 首页"><span class="initials">T.X</span></a>
+      <nav aria-label="主导航">
+        <a href="index.html">Blog</a>
+        <a href="projects.html">项目观察</a>
+        <a href="toolkit.html" aria-current="page">工程工具箱</a>
+        <a href="about.html">关于我</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="wrap">
+      <div class="page-head toolkit-head">
+        <div class="eyebrow">ENGINEERING TOOLKIT</div>
+        <h1>工程工具箱</h1>
+        <p>把常用计算、标准体系与文件关系，整理成可以随手查用的工程参考。</p>
+        <div class="toolkit-jump" aria-label="工具箱分类">
+          <a href="#calculations">计算公式</a>
+          <a href="#procedures">工艺与人员</a>
+          <a href="#inspection">质量与检验</a>
+          <a href="#materials">材料与设计</a>
+        </div>
+      </div>
+
+      <section class="toolkit-section section-anchor" id="calculations">
+        <div class="toolkit-section-head">
+          <div class="eyebrow">01 / CALCULATIONS</div>
+          <h2>常用计算公式</h2>
+          <p>用于快速核对定义和单位；工程取值仍应服从项目规范、工艺评定与材料制造商文件。</p>
+        </div>
+        <div class="toolkit-grid">
+          <article class="toolkit-card">
+            <div class="toolkit-tag">ARC ENERGY &amp; HEAT INPUT</div>
+            <h3>热输入速查</h3>
+            <div class="toolkit-formula"><span>Arc energy</span> = U × I × 60 / (v × 1000)</div>
+            <div class="toolkit-formula"><span>Heat input</span> = η × Arc energy</div>
+            <div class="toolkit-units">
+              <span><b>U</b> 电压 / V</span>
+              <span><b>I</b> 电流 / A</span>
+              <span><b>v</b> 焊接速度 / mm·min⁻¹</span>
+              <span><b>η</b> 能量传递效率</span>
+            </div>
+            <p>AE 与 HI 只是常见英文简写，并非统一标准符号。比较数值前，应确认是否计入效率系数 η、速度单位及适用规范。</p>
+            <a class="read" href="heat-input.html">查看完整说明 <span>→</span></a>
+          </article>
+
+          <article class="toolkit-card">
+            <div class="toolkit-tag">WELDABILITY INDICATORS</div>
+            <h3>碳当量速查</h3>
+            <div class="toolkit-formula formula-small"><span>CEV</span> = C + Mn/6 + (Cr+Mo+V)/5 + (Ni+Cu)/15</div>
+            <div class="toolkit-formula formula-small"><span>CET</span> = C + (Mn+Mo)/10 + (Cr+Cu)/20 + Ni/40</div>
+            <p>合金元素采用质量百分数。CEV 与 CET 是不同的经验指标，不能直接互换，也不能单独作为预热温度或可焊性的最终判据。</p>
+            <a class="read" href="https://www.ssab.com/en/support/how-to-process/how-to-weld/preheating-and-interpass-temperature/carbon-equivalent" target="_blank" rel="noopener">SSAB 公式说明 <span>↗</span></a>
+          </article>
+        </div>
+      </section>
+
+      <section class="toolkit-section section-anchor" id="standards">
+        <div class="toolkit-section-head">
+          <div class="eyebrow">02 / STANDARDS MAP</div>
+          <h2>常用标准地图</h2>
+          <p>先确认合同采用的规范体系，再进入具体标准。不同体系的评定范围、验收准则和术语不能直接混用。</p>
+        </div>
+
+        <div class="standards-grid">
+          <article class="standard-group section-anchor" id="procedures">
+            <div class="toolkit-tag">PROCEDURES &amp; PEOPLE</div>
+            <h3>工艺与人员</h3>
+            <a class="standard-item" href="https://www.iso.org/standard/51792.html" target="_blank" rel="noopener"><strong>ISO 15614-1</strong><span>钢和镍合金的焊接工艺评定试验及评定范围。</span><em>ISO ↗</em></a>
+            <a class="standard-item" href="https://www.iso.org/standard/54936.html" target="_blank" rel="noopener"><strong>ISO 9606-1</strong><span>钢熔化焊焊工的资格考试。</span><em>ISO ↗</em></a>
+            <a class="standard-item" href="https://www.iso.org/standard/68893.html" target="_blank" rel="noopener"><strong>ISO 14731</strong><span>焊接协调人员的质量相关任务与责任。</span><em>ISO ↗</em></a>
+          </article>
+
+          <article class="standard-group section-anchor" id="inspection">
+            <div class="toolkit-tag">QUALITY &amp; INSPECTION</div>
+            <h3>质量与检验</h3>
+            <a class="standard-item" href="https://www.iso.org/standard/81650.html" target="_blank" rel="noopener"><strong>ISO 3834 series</strong><span>熔化焊质量要求及适用质量等级的选择框架。</span><em>ISO ↗</em></a>
+            <a class="standard-item" href="https://www.iso.org/standard/80209.html" target="_blank" rel="noopener"><strong>ISO 5817</strong><span>熔焊接头缺欠的 B、C、D 质量等级；B 为最高要求。</span><em>ISO ↗</em></a>
+            <a class="standard-item" href="https://www.iso.org/standard/85705.html" target="_blank" rel="noopener"><strong>ISO 17635</strong><span>焊缝无损检测方法、检测技术与验收等级的选择原则。</span><em>ISO ↗</em></a>
+          </article>
+
+          <article class="standard-group">
+            <div class="toolkit-tag">DRAWINGS &amp; PROCESS ID</div>
+            <h3>图纸与工艺编号</h3>
+            <a class="standard-item" href="https://www.iso.org/standard/72740.html" target="_blank" rel="noopener"><strong>ISO 2553</strong><span>技术图纸中的焊接接头符号、尺寸和补充信息。</span><em>ISO ↗</em></a>
+            <a class="standard-item" href="https://www.iso.org/standard/75108.html" target="_blank" rel="noopener"><strong>ISO 4063</strong><span>焊接、钎焊和切割工艺的统一名称与参考编号。</span><em>ISO ↗</em></a>
+          </article>
+
+          <article class="standard-group section-anchor" id="materials">
+            <div class="toolkit-tag">MATERIALS &amp; STRUCTURES</div>
+            <h3>材料与结构设计</h3>
+            <a class="standard-item" href="https://www.iso.org/standard/30008.html" target="_blank" rel="noopener"><strong>ISO/TR 17671-2</strong><span>铁素体钢电弧焊的通用工艺建议与不利现象控制。</span><em>ISO ↗</em></a>
+            <a class="standard-item" href="https://knowledge.bsigroup.com/products/hot-rolled-products-of-structural-steels-technical-delivery-conditions-for-flat-products-of-high-yield-strength-structural-steels-in-the-quenched-and-tempered-condition-2" target="_blank" rel="noopener"><strong>EN 10025-6</strong><span>淬火和回火状态高屈服强度结构钢板的交货技术条件。</span><em>BSI ↗</em></a>
+            <a class="standard-item" href="https://eurocodes.jrc.ec.europa.eu/second-generation-eurocodes" target="_blank" rel="noopener"><strong>Eurocode 3 / EN 1993-1-12</strong><span>高强钢结构设计规则；使用时核对国家附录及新旧版本过渡安排。</span><em>JRC ↗</em></a>
+            <a class="standard-item" href="https://pubs.aws.org/p/2264/d11d11m2025-structural-welding-code-steel" target="_blank" rel="noopener"><strong>AWS D1.1/D1.1M</strong><span>合同采用 AWS 体系时，用于结构钢焊接设计、评定、制造与检验。</span><em>AWS ↗</em></a>
+          </article>
+        </div>
+
+        <p class="standards-note">标准版本会更新。这里提供的是检索入口和适用范围提示，实际工程应以合同、适用法规及标准机构发布的有效版本为准。</p>
+      </section>
+
+      <section class="toolkit-section section-anchor" id="working-reference">
+        <div class="toolkit-section-head">
+          <div class="eyebrow">03 / WORKING REFERENCE</div>
+          <h2>工作速查</h2>
+        </div>
+        <div class="toolkit-grid">
+          <article class="toolkit-card">
+            <div class="toolkit-tag">DOCUMENT MAP</div>
+            <h3>WPS / PQR 文件关系</h3>
+            <div class="toolkit-flow" aria-label="焊接工艺评定文件关系"><span>pWPS</span><b>→</b><span>PQR / WPQR</span><b>→</b><span>WPS</span></div>
+            <p>初步工艺用于评定焊接；合格的评定记录提供证据，并在适用范围内支持生产用 WPS。</p>
+            <a class="read" href="wps-pqr.html">理解文件与适用范围 <span>→</span></a>
+          </article>
+
+          <article class="toolkit-card section-anchor" id="steel">
+            <div class="toolkit-tag">MATERIAL INDEX</div>
+            <h3>S690 / S960 索引</h3>
+            <div class="grade-row"><strong>S690</strong><span>钢拱、混合梁与减重设计</span></div>
+            <div class="grade-row"><strong>S960</strong><span>加劲箱梁、焊接热过程与接头验证</span></div>
+            <p>强度等级是检索入口；具体判断仍需结合产品、厚度、交货状态和工艺评定。</p>
+            <div class="toolkit-links"><a class="read" href="blog-high-strength-steel.html">Read Blog articles <span>→</span></a><a class="read" href="s960-welding.html">阅读 S960 技术文章 <span>→</span></a><a class="read" href="projects.html">查看工程应用 <span>→</span></a></div>
+          </article>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap footer-grid">
+      <div>Welding, materials &amp; the structures they make possible.</div>
+      <div><a href="about.html">关于我</a><a href="mailto:xiaoty89757@gmail.com">Email ↗</a><span>© 2026</span></div>
+    </div>
+  </footer>
+</body>
+</html>

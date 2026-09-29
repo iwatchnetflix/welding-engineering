@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>电弧能量与热输入：定义、效率系数和单位 · XIAO Tingyu</title>
+  <meta name="description" content="XIAO Tingyu：焊接工程、高强钢与材料性能的专业解读。">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%23007a75'/%3E%3Ctext x='5' y='28' fill='white' font-size='24' font-family='Georgia'%3EXT%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="dark.css?v=20260928-11">
+  <script>document.documentElement.classList.add("i18n-loading")</script>
+  <script src="blog-nav.js" defer></script>
+  <script src="i18n.js?v=20260928-17" defer></script>
+</head>
+<body>
+  <a href="#main" class="skip">跳至正文</a>
+  <header>
+    <div class="wrap nav">
+      <a class="wordmark" href="index.html" aria-label="XIAO Tingyu 首页"><span class="initials">T.X</span></a>
+      <nav aria-label="主导航">
+        <a href="index.html" aria-current="page">Blog</a>
+        <a href="projects.html">项目观察</a>
+        <a href="toolkit.html">工程工具箱</a>
+        <a href="about.html">关于我</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <article class="wrap article">
+      <div class="breadcrumb"><a href="index.html">Blog</a> / 焊接工艺</div>
+      <div class="meta"><span class="category">焊接工艺</span><span>技术解读</span></div>
+      <h1>电弧能量与热输入：定义、效率系数和单位</h1>
+      <p class="lead">电弧能量和热输入在不同标准体系中的命名并不完全一致。比较 WPS、WPQR/PQR 或生产记录时，必须同时核对公式、效率系数和焊接速度单位。</p>
+
+      <h2>术语范围</h2>
+      <p>本文使用 AE 表示 Arc Energy（电弧能量），使用 HI 表示 Heat Input（热输入）。它们只是便于行文的缩写，并不是各标准统一采用的变量符号。工程文件应优先写明计算式和单位，而不能只依赖字段名称。</p>
+
+      <h2>计算式与单位</h2>
+      <p>电弧能量表示由电弧电参数计算得到的单位焊缝长度能量。当电压 U 采用 V、电流 I 采用 A、焊接速度 v 采用 mm/min 时：</p>
+      <div class="formula">Arc energy = 60 × U × I / (1000 × v) &nbsp; kJ/mm</div>
+      <p>当所采用的标准或项目定义要求计入焊接方法的热效率系数 η 时：</p>
+      <div class="formula">Heat input = η × Arc energy</div>
+      <p>式中的 60 用于把分钟换算为秒；若 v 采用 mm/s，公式中不使用该系数。任何计算结果都应同时注明速度单位以及是否计入 η。</p>
+
+      <h2>效率系数 η</h2>
+      <p>在常规 WPS／WPQR 计算中，η 通常采用适用标准给出的约定值，而不是对每条生产焊缝进行量热测定。η 表示传递到工件的热量与电弧能量之间的比例，不是焊机电源效率、熔敷效率或设备铭牌效率。</p>
+      <table>
+        <thead><tr><th>焊接方法</th><th>常用 η</th></tr></thead>
+        <tbody>
+          <tr><td>埋弧焊（SAW）</td><td>1.0</td></tr>
+          <tr><td>焊条电弧焊（MMA／SMAW）</td><td>0.8</td></tr>
+          <tr><td>MIG／MAG／GMAW、药芯焊丝焊（FCAW）</td><td>0.8</td></tr>
+          <tr><td>TIG／GTAW、等离子弧焊</td><td>0.6</td></tr>
+        </tbody>
+      </table>
+      <p>上表列出 EN 1011-1 体系中常用的约定值，用于工艺文件中的一致计算；它们不是针对每台设备或每种电弧波形的实测量热效率。脉冲、波形控制、复合热源或其他特殊工艺，应采用合同、产品标准或经批准工艺明确的计算边界。</p>
+      <p>审核时应确认：项目采用的标准体系；WPS、WPQR/PQR 与生产记录是否使用同一计算式；η 的取值依据；以及焊接速度单位。AWS 文件通常把未乘 η 的 U × I ÷ v 结果称为 heat input，因此在没有合同依据时不应再自行乘以 0.8。</p>
+
+      <h2>计算示例</h2>
+      <p>取 U = 25 V、I = 200 A、v = 300 mm/min，可得电弧能量 1.00 kJ/mm。若本例按所采用的定义取 η = 0.8，则热输入为 0.80 kJ/mm。这是计算示例，不是推荐焊接参数。</p>
+
+      <h2>不同标准体系的命名</h2>
+      <p>EN 1011-1 与相关技术资料通常区分 Arc Energy 和计入 η 后的 Heat Input；美国规范和部分工程文件则常把未乘 η 的数值直接称为 Heat Input。ISO/TS 8182:2026进一步规定了与电弧能量有关的参数如何从 WPQR 转入 WPS。跨体系比较时，应比较计算定义和记录参数，而不是只比较“Heat Input”字段中的数值。</p>
+
+      <div class="sources">
+        <h2>参考资料</h2>
+        <p><a href="https://www.twi-global.com/technical-knowledge/faqs/faq-what-is-the-difference-between-heat-input-and-arc-energy" target="_blank" rel="noopener">TWI · What is the difference between heat input and arc energy? ↗</a></p>
+        <p><a href="https://landingpage.bsigroup.com/LandingPage/Undated?UPI=000000000030110725" target="_blank" rel="noopener">BSI · BS EN 1011-1:2009, general guidance for arc welding ↗</a></p>
+        <p><a href="https://www.iso.org/standard/82999.html" target="_blank" rel="noopener">ISO/TS 8182:2026 · Welding parameters related to arc energy ↗</a></p>
+        <small>具体工程应采用合同指定的标准版本，并保证评定记录、WPS 与生产监控使用同一计算定义。</small>
+      </div>
+      <a class="back" href="blog-weldability.html">← 返回博客</a>
+    </article>
+  </main>
+
+  <footer>
+    <div class="wrap footer-grid">
+      <div>Welding, materials &amp; the structures they make possible.</div>
+      <div><a href="about.html">关于我</a><a href="mailto:xiaoty89757@gmail.com">Email ↗</a><span>© 2026</span></div>
+    </div>
+  </footer>
+</body>
+</html>
