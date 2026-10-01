@@ -16,8 +16,8 @@ Object.assign(window.XTY_ARTICLE_TRANSLATIONS || (window.XTY_ARTICLE_TRANSLATION
   "Image source: Leibniz University Hannover ↗": "图片来源：德国汉诺威莱布尼茨大学 ↗",
   "D = former diameter": "D = 弯心直径",
   "a = test-piece thickness": "a = 试样厚度",
-  "When a specification gives D = 2a or D = 3a, the former diameter is respectively two or three times the test-piece thickness a. For a full-thickness 40 mm plate specimen, those specified ratios would mean D = 80 mm or D = 120 mm. This is an arithmetic example only; it does not establish which ratio applies to a particular steel grade.": "当技术条件规定 D = 2a 或 D = 3a 时，弯心直径分别为试样厚度 a 的 2 倍或 3 倍。若采用 40 mm 全厚度板材试样，这两种规定对应 D = 80 mm 或 D = 120 mm。此处仅为计算示例，不能据此判断某一钢级适用哪种比例。",
-  ", the former diameter is respectively two or three times the test-piece thickness a. For a full-thickness 40 mm plate specimen, those specified ratios would mean D = 80 mm or D = 120 mm. This is an arithmetic example only; it does not establish which ratio applies to a particular steel grade.": " 时，弯心直径分别为试样厚度 a 的 2 倍或 3 倍。若采用 40 mm 全厚度板材试样，这两种规定对应 D = 80 mm 或 D = 120 mm。此处仅为计算示例，不能据此判断某一钢级适用哪种比例。",
+  "When a specification gives D = 2a or D = 3a, the former diameter is respectively two or three times the test-piece thickness a. For a full-thickness 10 mm plate specimen, those specified ratios would mean D = 20 mm or D = 30 mm. This is an arithmetic example only; it does not establish which ratio applies to a particular steel grade.": "当技术条件规定 D = 2a 或 D = 3a 时，弯心直径分别为试样厚度 a 的 2 倍或 3 倍。若采用 10 mm 全厚度板材试样，这两种规定对应 D = 20 mm 或 D = 30 mm。此处仅为计算示例，不能据此判断某一钢级适用哪种比例。",
+  ", the former diameter is respectively two or three times the test-piece thickness a. For a full-thickness 10 mm plate specimen, those specified ratios would mean D = 20 mm or D = 30 mm. This is an arithmetic example only; it does not establish which ratio applies to a particular steel grade.": " 时，弯心直径分别为试样厚度 a 的 2 倍或 3 倍。若采用 10 mm 全厚度板材试样，这两种规定对应 D = 20 mm 或 D = 30 mm。此处仅为计算示例，不能据此判断某一钢级适用哪种比例。",
   "For the same specimen thickness and setup, a smaller D gives a tighter bend and generally increases tensile strain at the outer surface. It is therefore usually the more demanding condition. Severity is not determined by D alone: specimen dimensions and preparation, bend direction, supports, angle, test procedure and acceptance rule also matter.": "在试样厚度和装置相同的条件下，D 越小，弯曲内侧半径通常越小，外表面拉伸应变也通常越大，因此试验条件一般更严苛。但严苛程度不能仅由 D 判断；试样尺寸和制备、弯曲方向、支承方式、角度、试验程序及验收准则也会产生影响。",
   "What does a 180° bend require?": "180°弯曲代表什么？",
   "“180°” specifies the target bend angle, but it does not by itself define every detail of the final geometry. Depending on the applicable product requirement, the specimen’s sides may be brought into contact or held parallel at a specified separation. Springback and the specified testing route also matter. The method and endpoint should therefore be taken from the product standard or order rather than described simply as “press until the ends touch”.": "“180°”规定的是目标弯曲角度，但不能单独确定最终几何形状的所有细节。根据适用的产品要求，试样两侧可能需要贴合，也可能需保持平行并留有规定间距；回弹和规定的试验方式同样需要考虑。因此，试验方法和终点应依据产品标准或订单，而不宜简单写成“压到两端贴合”。",
@@ -35,4 +35,14 @@ Object.assign(window.XTY_ARTICLE_TRANSLATIONS || (window.XTY_ARTICLE_TRANSLATION
   "BSI · BS EN ISO 7438:2020, Metallic materials — Bend test ↗": "BSI · BS EN ISO 7438:2020《金属材料 弯曲试验》↗",
   "UNI · EN 10025-6:2019+A1:2022, High-yield-strength structural steel flat products ↗": "UNI · EN 10025-6:2019+A1:2022《高屈服强度结构钢扁平产品》↗",
   "BSI · BS EN ISO 5173:2023, Destructive tests on welds — Bend tests ↗": "BSI · BS EN ISO 5173:2023《焊缝破坏性试验 弯曲试验》↗"
+});
+
+Object.assign(window.XTY_ARTICLE_TRANSLATIONS, {
+  "Read the result in six steps": "六步读懂横向冷弯结果",
+  "Purpose: assess plastic bending ability under specified conditions; it does not replace impact testing or ultrasonic examination.": "检测目的：评价规定条件下的塑性弯曲能力，不能替代冲击试验或超声检测。",
+  "Transverse sampling: the specimen length is perpendicular to the plate rolling direction.": "横向取样：试样长度方向垂直于钢板轧制方向。",
+  "Former: in a common three-point fixture, the central loading tool is the former; the two lower rollers are supports.": "弯心：常见三点弯曲装置中，中间向下施压的工具是弯心，下方两侧滚轮是支辊。",
+  "Dimensions: D is the diameter of the contacting circular former profile; its radius is R = D / 2. For a rounded punch, measure the working nose, not the machine ram or punch shank.": "尺寸：D 是弯心与试样接触的圆形轮廓直径，半径 R = D / 2。圆弧压头应看工作端圆弧尺寸，而不是试验机横梁或压头杆部的直径。",
+  "Ratios: a is the test-piece thickness; D = 2a and D = 3a are specified diameter-to-thickness ratios, with the smaller diameter usually more demanding under otherwise equal conditions.": "比例：a 是试样厚度；D = 2a、D = 3a 为规定的直径与厚度之比。其他条件相同时，弯心直径较小通常更严苛。",
+  "Endpoint and acceptance: confirm the 180° geometry and the meaning of “sound” in the governing requirement; the result describes the tested specimen.": "终点与验收：按适用要求确认 180° 的最终形状和“完好”的判据；结果针对受检试样。"
 });
