@@ -144,7 +144,7 @@ Object.assign(window.XTY_ARTICLE_TRANSLATIONS || (window.XTY_ARTICLE_TRANSLATION
   "National standards catalogue — GB/T 2653-2008": "国家标准平台 — GB/T 2653-2008",
   "GB 50661-2011 — 6.5.3 and 6.5.4, government-hosted text": "GB 50661-2011 — 6.5.3、6.5.4，政府网站公开文本",
   "AWS D1.1/D1.1M:2025-AMD1 — publisher preview and fixture index": "AWS D1.1/D1.1M:2025-AMD1 — 出版方预览及夹具图目录",
-  "Bend Testing Explained: Plate and Welded Joints": "从零理解弯曲试验：母材钢板与焊接接头",
+  "Bend Testing: Plate and Welded Joints": "从零理解弯曲试验：母材钢板与焊接接头",
   "A beginner’s guide to the specimen, former diameter, test procedure and acceptance evidence—with separate routes for plate tests and PQR / WPQR weld qualification.": "从试样、弯心直径到试验过程和验收证据，逐步理解弯曲试验，并分别讲清母材钢板与 PQR／WPQR 接头评定的规则。",
   "14 MIN READ": "14 分钟阅读",
   "Original schematic of a former, specimen and supports": "弯心、试样与支辊的原创示意图",
