@@ -9,7 +9,7 @@
     "blog-qualification.html", "blog-testing-inspection.html",
     "heat-input.html", "carbon-equivalent-preheat.html",
     "t8-5-cooling-time.html", "hydrogen-cracking.html", "s960-welding.html",
-    "q690qe-grade.html", "z-quality-lamellar-tearing.html", "strength-matching.html", "wps-pqr.html",
+    "q690qe-grade.html", "yield-ratio-structural-steel.html", "z-quality-lamellar-tearing.html", "strength-matching.html", "wps-pqr.html",
     "wps-essential-variables.html", "ctod-eca.html", "weld-hardness.html",
     "ndt-acceptance.html", "hong-kong-weld-inspection.html"
   ]);
