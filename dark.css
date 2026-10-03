@@ -452,8 +452,8 @@ footer {background:#eaf0e9;color:#52686b;}
   border-radius: 0;
   box-shadow: none;
   filter: drop-shadow(0 24px 24px rgba(35, 59, 64, .16));
-  -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, .12) 9%, rgba(0, 0, 0, .55) 19%, #000 33%, #000 67%, rgba(0, 0, 0, .55) 81%, rgba(0, 0, 0, .12) 91%, transparent 100%);
-  mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, .12) 9%, rgba(0, 0, 0, .55) 19%, #000 33%, #000 67%, rgba(0, 0, 0, .55) 81%, rgba(0, 0, 0, .12) 91%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, transparent 14%, rgba(0, 0, 0, .12) 25%, rgba(0, 0, 0, .55) 38%, #000 52%, #000 67%, rgba(0, 0, 0, .55) 81%, rgba(0, 0, 0, .12) 91%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, transparent 14%, rgba(0, 0, 0, .12) 25%, rgba(0, 0, 0, .55) 38%, #000 52%, #000 67%, rgba(0, 0, 0, .55) 81%, rgba(0, 0, 0, .12) 91%, transparent 100%);
 }
 
 @media (max-width: 650px) {
